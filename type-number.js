@@ -22,3 +22,10 @@ console.log(novaOperacao)
 
 const alura = "Alura";
 console.log(alura * primeiroNumero)
+
+// No caso de números, é possível salvar em uma variável não somente o número em si, como em const num = 5;, mas também o resultado de uma operação (ou mais):
+
+const soma = 10 + 10;
+const multiplicacao = 10 * 10;
+const operacao = (soma + multiplicacao) + 10;
+
