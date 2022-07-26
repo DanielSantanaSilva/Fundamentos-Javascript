@@ -2,7 +2,7 @@ const nome = "Daniel";
 const sobrenome = " Santana";
 const apresentacao = nome + sobrenome;
 
-console.log(apresentacao)
+console.log(apresentacao);
 
 // Template String
 
@@ -12,7 +12,6 @@ const cidadeDeNascimento = "São Paulo";
 
 const Apresentacao = `Meu nome é ${Nome}${Sobrenome} e nasci na cidade de ${cidadeDeNascimento}`;
 
-console.log(Apresentacao)
+console.log(Apresentacao);
 
-// Utilização de acento grace para concatenção
-
+// Utilização de acento grave para concatenção
