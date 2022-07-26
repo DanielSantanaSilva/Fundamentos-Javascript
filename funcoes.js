@@ -38,3 +38,16 @@ ImprimeTexto(soma());
 function soma() {
   return 2 + 2;
 }
+
+/*
+const num1 = 5;
+const num2 = 5;
+const resultado = num1 + num2; 
+*/
+
+// Código refatorado como função para receber dois valores e realizar a soma.
+
+function soma(num1, num2) {
+  return num1 + num2;
+}
+console.log(soma(10, 20));
