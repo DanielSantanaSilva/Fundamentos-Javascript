@@ -27,17 +27,23 @@ console.log(area)
 
 // const
 
-const forma = 'quadrado';
+const forma = "quadrado";
 const altura = 5;
 const comprimento = 6;
 let area;
 
-if (forma === 'triângulo') {
-    area = altura * comprimento;
-}else {
-    area = (altura * comprimento) / 2;
-
+if (forma === "triângulo") {
+  area = altura * comprimento;
+} else {
+  area = (altura * comprimento) / 2;
 }
 
-console.log(area)
+console.log(area);
 
+// Tipagem dinâmica
+
+let minhaVar = 357;
+minhaVar = "Texto";
+minhaVar = true;
+
+console.log(minhaVar);
