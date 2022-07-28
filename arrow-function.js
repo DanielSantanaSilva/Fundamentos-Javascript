@@ -5,6 +5,7 @@ function apresentar(nome) {
 // Arrow function
 const apresentarArrow = (nome) => "Meu nome é ${nome}";
 const soma = (num1, num2) => num1 + num2;
+console.log(soma(1, 4)); //5
 
 // Arrow function com mais de uma linha de instrução
 
