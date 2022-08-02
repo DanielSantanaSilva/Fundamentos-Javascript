@@ -1,10 +1,19 @@
 // Resumo (introdução de Orientação ao Objeto)
 
-// A Orientação a Objetos é um modelo (estilo) de se programar (paradigma orientado ao abjeto)
+/* Os conceitos iniciais sobre o modelo conhecido como orientação a objetos, que objetiva trazer para linguagem de programação conceitos presentes na vida real.
 
-// Na Orientação a Objetos a idéia é tranformar coisas do mundo para o código.
+//A Orientação a Objetos é um modelo (estilo) de se programar (paradigma orientado ao abjeto).
 
-// Uma classe tem atibutos e métodos.
+Na Orientação a Objetos a idéia é tranformar coisas do mundo para o código.
+*/
+
+/*
+Na construção de uma classe em JavaScript, além da palavra reservada class, devemos também definir uma função construtora (que inicializa as propriedades do objeto) quando ele for criado. No JavaScript temos a definição de um método construtor para a inicialização das propriedades de objetos no momento da sua instanciação em memória.
+
+Uma classe tem atibutos e métodos. 
+
+No paradigma da orientação a objetos, uma classe define um modelo base usado na criação de objetos na memória do computador.
+*/
 
 // Um objeto é uma instância de classe em memória.
 
