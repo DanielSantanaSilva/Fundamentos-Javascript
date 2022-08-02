@@ -1,2 +1,2 @@
 # Javascript - Fundamentos
- Fundamentos do JS, Curso Backend Javascript Alura
+Formação JavaScript para back-end
