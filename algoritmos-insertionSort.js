@@ -1,18 +1,13 @@
 // Outro exemplo de ordenação
 
 const livros = require("./algoritmos-listaLivros");
+const troca = require("./algoritmos-troca");
 
 function insertionSort(lista) {
   for (let atual = 0; atual < lista.length; atual++) {
     let analise = atual;
     while (analise > 0 && lista[analise].preco < lista[analise - 1].preco) {
-      //condição do while utilizando && (e), são duas condições
-      let itemAnalise = lista[analise];
-      let itemAnterior = lista[analise - 1];
-
-      lista[analise] = itemAnterior;
-      lista[analise - 1] = itemAnalise;
-
+      troca(lista, analise);
       analise--;
     }
   }
@@ -39,4 +34,3 @@ insertionSort(livros);
 // Utilizado Teste de mesa - desk checking, para verificar o funcionamento de cadas parte do código.
 
 //teste de mesa é justamente o processo manual de verificar todas as linhas de um código e executá-lo passo a passo com ajuda de, por exemplo, papel e lápis para anotar qual os valores das variáveis em cada passo de cada linha. É como compilar/interpretar um bloco de código usando o cérebro como compilador/interpretador.
-
