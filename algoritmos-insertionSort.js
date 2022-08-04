@@ -34,3 +34,7 @@ insertionSort(livros);
 // Utilizado Teste de mesa - desk checking, para verificar o funcionamento de cadas parte do código.
 
 //teste de mesa é justamente o processo manual de verificar todas as linhas de um código e executá-lo passo a passo com ajuda de, por exemplo, papel e lápis para anotar qual os valores das variáveis em cada passo de cada linha. É como compilar/interpretar um bloco de código usando o cérebro como compilador/interpretador.
+
+/* Dica: existem vários outros algoritmos apenas para resolver o problema de ordenar listas, como Quick Sort, Radix Sort e etc. Todos esses algoritmos já foram desenvolvidos anteriormente, assim como o Selection Sort e o Insertion Sort que utilizamos durante o curso.
+
+Se quiser checar outros modos de visualizar os dados, pode buscar por sorting algorithm comparison no YouTube e comparar os resultados.*/
