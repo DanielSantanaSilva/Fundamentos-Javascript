@@ -30,19 +30,33 @@ function divideNoPivo(array) {
   console.log(pivo);
   //{ titulo: 'Rust', preco: 22 }
 
+  //A primeira coisa que a função divideNoPivo() faz é localizar o pivô no meio do array
+
+  //Em seguida, chama a função encontraMenores() que vai contar quantos elementos com valor menor que 22 existem no array, para em seguida trocar o pivô de lugar com o elemento que está na posição seguinte à quantidade de elementos menores.
+
   encontraMenores(pivo, array);
   let valoresMenores = 0;
 
   for (let analisando = 0; analisando < array.length; analisando++) {
     let atual = array[analisando];
+    //A variável atual guarda o objeto referente ao elemento que será comparado com o valor do pivô, e é dessa variável que pegaremos a propriedade preco.
+
     if (atual.preco <= pivo.preco && atual !== pivo) {
       trocaLugar(array, analisando, valoresMenores);
       valoresMenores++;
     }
   }
+  //Chegamos à condicional if, que faz a comparação cd preco entre o pivô e o atual. Caso o preço do elemento atual seja menor, chamamos a função trocaLugar para trocar a posição do elemento atual com o elemento na posição valoresMenores - lembrando que o valor inicial dessa variável é 0, o que corresponde ao índice do primeiro elemento do array.
+
+  //Destrinchando o intuito da variável valoresMenores: ela está controlando a posição onde serão inseridos os elementos com valores menores que o pivô - lembrando que nesse momento o pivô já está posicionado em seu índice correto.
+
+  //Por esse motivo valoresMenores é iniciada no índice 0: durante o laço for, cada elemento do array tem sua propriedade preco comparada com preco do elemento pivô. Quando é encontrado o primeiro elemento com valor menor (PHP no índice 3), o código entra no bloco if e chama a função trocaLugar() passando como parâmetros de troca a posição do elemento atual e a posição 0, que é o valor da variável valoresMenores neste momento da execução. Isso vai fazer com que um elemento de valor menor que o pivô assuma o lugar de um elemento de valor maior.
 
   return array;
 }
+
+// Em seguida, é feito um loop para passar os elementos com valor menor que o pivô para a esquerda dele, e os de valor maior para a direita.
+
 console.log(divideNoPivo(listaLivros));
 
 /*
@@ -66,3 +80,5 @@ console.log(divideNoPivo(listaLivros));
 // Java esta na posição 5, lembrando que índice começa em 0.
 
 module.exports = trocaLugar;
+
+//

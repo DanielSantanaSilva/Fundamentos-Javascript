@@ -11,11 +11,12 @@ function quickSort(array, esquerda, direita) {
       quickSort(array, indiceAtual, direita);
     }
   }
-
   return array;
 }
 
 function particiona(array, esquerda, direita) {
+  //A primeira coisa que a função particiona() faz é localizar o pivô no meio do array
+
   let pivo = array[Math.floor((esquerda + direita) / 2)];
   let atualEsquerda = esquerda; //0
   let atualDireita = direita; //10
@@ -37,6 +38,7 @@ function particiona(array, esquerda, direita) {
   }
   return atualEsquerda;
 }
+
 console.log(quickSort(listaLivros, 0, listaLivros.length - 1));
 
 /*
@@ -67,4 +69,14 @@ console.log(quickSort(listaLivros, 0, listaLivros.length - 1));
   { titulo: 'Go', preco: 45 },
   { titulo: 'Elixir', preco: 50 }
 ]
+*/
+
+//O quick sort utiliza o princípio do elemento pivô para fazer a ordenação dos elementos.
+
+//Em nosso código, utilizamos sempre o elemento do meio do array como pivô para separar maiores e menores, porém a posição do pivô com relação ao array completo vai sendo modificada durante a ordenação. O array original vai ser “fatiado” em pequenas partes, e sempre que isso acontece é definido um novo pivô a partir do meio do array.
+
+/* Dica:
+
+Posicionar o pivô no primeiro elemento do array pode levar o algoritmo a se comportar no pior caso possível, se o array já tiver algum tipo de ordenação interna.
+Observando a simulação que fizemos na aula, vemos que a ordenação do array é feita em partes bem pequenas para que depois ele seja reconstruído. Desconstruir essas partes já ordenadas, para desordená-las temporariamente e só depois reconstruí-las não é uma boa escolha.
 */

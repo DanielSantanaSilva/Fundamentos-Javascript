@@ -32,7 +32,7 @@ class ClientePoupanca extends Cliente {
 }
 
 const daniel = new ClientePoupanca(
-  "Daneil",
+  "Daniel",
   "daniel@email.com",
   "36541256247",
   1000,
@@ -42,7 +42,7 @@ const daniel = new ClientePoupanca(
 console.log(daniel);
 /*
 ClientePoupanca {
-  nome: 'Daneil',
+  nome: 'Daniel',
   email: 'daniel@email.com',
   cpf: '36541256247',
   saldo: 1000,
@@ -56,7 +56,7 @@ console.log(daniel);
 /*
 }
 ClientePoupanca {
-  nome: 'Daneil',
+  nome: 'Daniel',
   email: 'daniel@email.com',
   cpf: '36541256247',
   saldo: 1100,
