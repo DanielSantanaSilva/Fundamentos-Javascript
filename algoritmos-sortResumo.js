@@ -5,7 +5,6 @@
 let numeros = [1, 2, 3, 101, 20, 3, 30, 31, 40];
 numeros.sort();
 console.log(numeros);
-
 // Saída
 // [1, 101, 2, 20, 3, 3, 30, 31, 40]
 
@@ -16,8 +15,17 @@ numbers.sort(function (a, b) {
   return a - b;
 });
 console.log(numbers);
-// Saída
 //[1, 2, 3, 4, 5]
+
+/*Simplicando a implementação
+E, claro, podemos simplificar bastante esse código.
+
+É possível trocar a função nomeada pra ser anônima. E trocar os três IFs por uma conta simples: a - b.
+Repare que o resultado dessa conta é sempre 0 se forem iguais, -1 se a é menor e 1 se b é menor. Exatamente o que precisamos.
+Juntanto tudo isso com a sintaxe de arrow functions do ES6 pra escrever menos, podemos simplesmente fazer:*/
+
+numbers.sort((a, b) => a - b);
+console.log(numbers); // [ 1, 2, 3, 4, 5 ]
 
 //No JavaScript, a forma como o método é implementado depende do motor que faz a interpretação. A partir de cada versão aprovada do JavaScript pelo ECMA, as empresas ou fundações responsáveis pelos navegadores/interpretadores (chamadas de vendors no jargão da área) decidem e fazem a implementação das funcionalidades.
 
